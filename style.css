@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    padding: 2rem 1rem;
+    color: #FFFFFF;
+}
+
+* {
+    font-family: 'Inter';
+    font-size: 18px;
+}
+.dropdown {
+    background-color: black;
+    padding: 1rem;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+option {
+    padding: 1rem;
+    border: 1px solid #FFFFFF;
+}
+button {
+    padding: 0.8rem 3rem;
+}
+.box {
+    height: 100px;
+}
+h3 {
+    color: #FFFFFF;
+}
+input {
+    background-color: black;
+    padding: 0.2rem;
+    border: 1px solid #FFFFFF;
+    margin: 0.4rem 1rem 0 0 ;
+    color: #FFFFFF;
+}
+h3, .dropdown, button {
+    font-size: 24px;
+}
+.scroll {
+    margin: 0.5rem;
+    overflow: auto;
+    text-align:justify;
+}
+
+.all-cards {
+    min-height: 50px;
+    max-height: 230px;
+    width: 35rem;
+    border: 1px solid rgba(0, 0, 0, 0.306);
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.card {
+    display: flex;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 1rem;
+}
+.card > .id {
+    width: 8%;
+}
+.card > .name {
+    width: 30%;
+}
+.card > .prof {
+    width: 40%;
+}
+
+.contain {
+    display: flex;
+    margin: 1rem 0;
+}
+.cc {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 720px) {
+    .contain {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2px;
+    }
+    .all-cards {
+        width: fit-content;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h3>Filter UI Cards via their profession</h3>
+
+    <!-- dropdown to select the prof to filter -->
+    <select id="filterProfession" name="Profession" class="dropdown">
+        <option value="null">Profession</option>
+        <option value="developer">Developer</option>
+        <option value="admin">Admin</option>
+    </select>
+
+    <!-- <div class="scroll">
+        <p id="firstOut" class="box"></p>
+    </div> -->
+
+    <div class="all-cards"></div>
+
+    <button class="filter" onclick="filterdata()"> Filter </button>
+
+    <br><br><br><br>
+    <h3>Add a new User</h3>
+
+    <form>
+        <div class="contain">
+            <div class="cc">
+                <label for="name"><b>Enter Name</b></label>
+                <input type="text" placeholder="Enter Name" value="" id="name" onfocus="this.value=''" required>
+            </div>
+            <div class="cc">
+                <label for="profession"><b>Enter Profession</b></label>
+                <input type="text" placeholder="Enter Profession" value="" id="profession" required>
+            </div>
+            <div class="cc">
+                <label for="age"><b>Enter Age</b></label>
+                <input type="number" placeholder="Enter Age" value="" id="age" required>
+            </div>
+        </div>
+        
+        <button onclick="addData()">Add User</button>
+        <p id="secondOut"></p>
+    </form>
+    <script src="script.js"></script>
+
+</body>
+</html>
